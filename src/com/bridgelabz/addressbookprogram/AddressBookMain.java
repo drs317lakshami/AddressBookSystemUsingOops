@@ -11,7 +11,7 @@ public class AddressBookMain {
         //Show Menu for user to Select Operation on AddressBook
         do {
             System.out.println("1. Add New Contact\n2. Edit Contact\n3. Delete Contact" + "\n4. Display Contact\n5. Exit");
-            System.out.println("Enter Choose: ");
+            System.out.println("Enter Choice: ");
             choice = addressBook.sc.nextInt();
 
             switch (choice) {
@@ -19,6 +19,8 @@ public class AddressBookMain {
                     addressBook.addNewContact();
                     break;
                 case 2:
+                    addressBook.editContact();
+                    break;
                 case 3:
                     break;
                 case 4:
