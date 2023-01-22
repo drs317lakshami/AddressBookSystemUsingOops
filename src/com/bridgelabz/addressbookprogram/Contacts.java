@@ -68,6 +68,20 @@ public class Contacts {
         return email;
     }
     public void setEmail(String email) {
+
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Contacts Details :" +"\n"+
+                "Firstname :" + firstname +","+
+                "Lastname :" + lastname + ','+
+                "Address :" + Address + ',' +
+                "City :" + city + ',' +
+                "State :" + state + ',' +
+                "Pin :" + Pin +','+
+                "PhoneNumber :" + phoneNumber +','+
+                "Email :" + email ;
     }
 }
