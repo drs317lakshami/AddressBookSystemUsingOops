@@ -22,6 +22,7 @@ public class AddressBookMain {
                     addressBook.editContact();
                     break;
                 case 3:
+                    addressBook.deleteContact();
                     break;
                 case 4:
                     addressBook.displayContact();
@@ -33,7 +34,7 @@ public class AddressBookMain {
                     System.out.println("Please Select between 1 to 5 only.");
                     break;
             }
-        }while( choice != 5 );
-
+        }
+        while( choice != 5 );
     }
     }
